@@ -65,6 +65,11 @@ func runQuiz() {
 			Correct: 1,
 		},
 		{
+			Text:    "Заблокирована ли кнопка или нет <button disabled=\"false\">",
+			Options: []string{"Да", "Нет"},
+			Correct: 0,
+		},
+		{
 			Text:    "Чему будет равно это условие? Math.min() > Math.max();",
 			Options: []string{"True", "False"},
 			Correct: 0,
@@ -73,6 +78,11 @@ func runQuiz() {
 			Text:    "Сплит по строке \"\".split(\"\"); возвращает пустой массив []. Как изменить код, чтобы он вернул массив с пустой строкой [\"\"]?",
 			Options: []string{"\"\".split(\" \")", "\" \".split(\"\")"},
 			Correct: 0,
+		},
+		{
+			Text:    "Кто твой любимый музыкальный исполнитель",
+			Options: []string{"Неправильный ответ", "Егор Крид"},
+			Correct: 1,
 		},
 	}
 
@@ -102,24 +112,27 @@ func runQuiz() {
 }
 
 func main() {
-
 	fmt.Println("Дима, привет!")
+	fmt.Println()
 	<-time.After(time.Second * 3)
 
 	fmt.Println("У тебя сегодня день рождения?")
+	fmt.Println()
 	<-time.After(time.Second * 3)
 
 	fmt.Println("Кхмм...")
+	fmt.Println()
 	<-time.After(time.Second * 3)
 
 	fmt.Println("Просто так мы подарок не дадим ⊂(◉‿◉)つ")
+	fmt.Println()
 	<-time.After(time.Second * 4)
 
 	fmt.Println("Придется решить несколько задачек по любимому JavaScript!")
+	fmt.Println()
 	<-time.After(time.Second * 5)
 
 	fmt.Println("Ты готов? Напиши Да")
-	<-time.After(time.Second * 5)
 
 	waitInput()
 
